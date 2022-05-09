@@ -7,9 +7,14 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header><h1>applied accessibility</h1></header>
 		<main>
-			<div>use the alt attribute for screen readers</div>
+			<h1>applied accessibility</h1>
+			<h2>the alt attribute</h2>
+			<p>use the alt attribute so image info can be read by screen readers</p>
+			<p>
+				use an empty alt attribute for images with explanation text, or images
+				without meaning such as decoration and background images
+			</p>
 			<div>
 				<img
 					src="theknight.png"
@@ -24,6 +29,17 @@
 					id="knightimage"
 				/>
 			</div>
+			<h2>headings</h2>
+			<p>
+				screen readers can be set to read only the headings on a page so the
+				user gets a summary
+			</p>
+			<p>choose header tags based on semantic meaning, not just font size</p>
+			<p>
+				lower ranked headings imply subsections. don't jump from h2 to h4. edit
+				sizing with css
+			</p>
+			<p>only use one h1 tag per page</p>
 		</main>
 		<script src="index.js"></script>
 	</body>
