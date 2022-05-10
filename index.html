@@ -145,9 +145,21 @@
 				"the knight defeated the hollow knight
 				<time datetime="2022-05-10">last Monday</time>"
 			</p>
-			<h2>heading</h2>
-			<p>content</p>
-			<p>content</p>
+			<h2>CSS</h2>
+			<p>
+				use CSS to visually hide content meant only for screen readers, such as
+				when a screen reader needs a chart in table form, by pushing it out of
+				the viewport
+			</p>
+			<p>
+				.sr-only { position: absolute; left: -10000px; width: 1px; height: 1px;
+				top: auto; overflow: hidden; }
+			</p>
+			<p>
+				note that display: none and visibility: hidden hide the content for
+				everyone, and 0px values remove item from flow of page making it
+				unreadable by screen readers
+			</p>
 			<h2>heading</h2>
 			<p>content</p>
 			<p>content</p>
