@@ -190,9 +190,11 @@
 				use accesskeys to make navigation more efficient for keyboard only users - also works on buttons and form controls
 			</p>
 			<p>click here for <a accesskey="h" href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki">information about hollow knight</a></p></p>
-			<h2>heading</h2>
-			<p>content</p>
-			<p>content</p>
+			<h2>tabindex attribute</h2>
+            <p>links and form controls automatically recieve keyboard focus</p>
+			<p>tabindex="0" adds keyboard focus when a user tabs through page to elements such as div, span and p</p>
+			<p>tabindex="-1" indicates that it is focusable but not reachable by keyboard</p>
+            <p>tabindex="1" or higher ("2", "3"...) sets the tab order of the elements - note this can override the default order so use carefully</p>
 		</main>
 		<script src="index.js"></script>
 	</body>
