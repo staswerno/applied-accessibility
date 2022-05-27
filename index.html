@@ -10,9 +10,9 @@
 		<header><h1>applied accessibility</h1></header>
 		<main>
 			<h2>the alt attribute</h2>
-			<p>use the alt attribute so image info can be read by screen readers</p>
+			<p>use the <code>alt</code> attribute so image info can be read by screen readers</p>
 			<p>
-				use an empty alt attribute for images with explanation text, or images
+				use an empty <code>alt</code> attribute for images with explanation text, or images
 				without meaning such as decoration and background images
 			</p>
 			<div>
@@ -34,14 +34,14 @@
 				screen readers can be set to read only the headings on a page so the
 				user gets a summary
 			</p>
-			<p>choose header tags based on semantic meaning, not just font size</p>
+			<p>choose <code>header</code> tags based on semantic meaning, not just font size</p>
 			<p>
-				lower ranked headings imply subsections. don't jump from h2 to h4 - edit
+				lower ranked headings imply subsections. don't jump from <code>h2</code> to <code>h4</code> - edit
 				sizing with css
 			</p>
-			<p>only use one h1 tag per page</p>
+			<p>only use one <code>h1</code> tag per page</p>
 			<h2>semantic tags</h2>
-			<p>these include main, header, footer, nav, article and section</p>
+			<p>these include <code>main</code>, <code>header</code>, <code>footer</code>, <code>nav</code>, <code>article</code> and <code>section</code></p>
 			<p>
 				assistive technologies can access this information to provide better
 				page summary or navigation options to their user
@@ -51,35 +51,35 @@
 				across pages such as navigation links
 			</p>
 			<p>
-				main also offers assistive devices "jump to main content" functionality
+				<code></code>main also offers assistive devices "jump to main content" functionality
 			</p>
 			<p>
-				use article to wrap independent, self-contained content such as blog
+				use <code></code>article to wrap independent, self-contained content such as blog
 				entries, forum posts and news articles
 			</p>
 			<p>
-				div - groups content | section - groups related content | article -
+				<code></code>div - groups content | <code></code>section - groups related content | <code></code>article -
 				groups independent, self-contained content
 			</p>
 			<p>
-				header is used to wrap introductory information or navigation links for
+				<code></code>header is used to wrap introductory information or navigation links for
 				its parent tag and works well around content that's repeated at the top
 				on multiple pages
 			</p>
-			<p>header also offers assistive devices "jump to header" functionality</p>
-			<p>nav wraps around main navigation links, but not footer links</p>
+			<p><code></code>header also offers assistive devices "jump to header" functionality</p>
+			<p><code></code>nav wraps around main navigation links, but not footer links</p>
 			<p>
-				footer is primarily used to contain copyright information or links to
+				<code></code>footer is primarily used to contain copyright information or links to
 				related documents that usually sit at the bottom of a page and also has
 				the "jump to" feature
 			</p>
 			<h2>audio content</h2>
-			<p>use audio tags around audio content</p>
+			<p>use <code></code>audio tags around audio content</p>
 			<p>
 				audio content also needs alternative text - usually nearby text or link
 				to a transcript
 			</p>
-			<p>supports the controls attribute</p>
+			<p>supports the <code></code>controls attribute</p>
 			<p>
 				<audio controls>
 					<source
@@ -96,24 +96,24 @@
 			<p>adds both semantic info and a text explanation</p>
 			<h2>forms</h2>
 			<p>
-				use the label tag to wrap the text for a specific form control item,
-				usually the name or label for a choice
+				use the <code></code>label tag to wrap the text for a specific form control item,
+				usually the <code></code>name or <code></code>label for a choice
 			</p>
 			<p>
-				the for attribute on a label tag explicitly associates that label with
+				the <code></code>for attribute on a <code></code>label tag explicitly associates that label with
 				the form control and is used by screen readers - must be same value as
-				form control id
+				form control <code></code>id
 			</p>
 			<form>
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="name" />
 			</form>
 			<p>
-				use fieldset tag on radio buttons to show that they are grouped together
-				- use legend tag for description
+				use <code></code>fieldset tag on radio buttons to show that they are grouped together
+				- use <code></code>legend tag for description
 			</p>
 			<p>
-				don't use these if selection is obvious, such as gender - label with for
+				don't use these if selection is obvious, such as gender - label with <code></code>for
 				will suffice
 			</p>
 			<form>
@@ -136,9 +136,9 @@
 			<label for="pickdate">preferred date:</label>
 			<input type="date" id="pickdate" name="date" />
 			<h2>time and datetime</h2>
-			<p>wrap dates or times with the time element and datetime attribute</p>
+			<p>wrap dates or times with the <code></code>time element and <code></code>datetime attribute</p>
 			<p>
-				datetime value is accessed by assistve devices and avoids confusion for
+				<code></code>datetime value is accessed by assistve devices and avoids confusion for
 				informally stated dates
 			</p>
 			<p>
@@ -152,11 +152,11 @@
 				the viewport
 			</p>
 			<p>
-				.sr-only { position: absolute; left: -10000px; width: 1px; height: 1px;
+				<code></code>.sr-only { position: absolute; left: -10000px; width: 1px; height: 1px;
 				top: auto; overflow: hidden; }
 			</p>
 			<p>
-				note that display: none and visibility: hidden hide the content for
+				note that <code></code>display: none and <code></code>visibility: hidden hide the content for
 				everyone, and 0px values remove item from flow of page making it
 				unreadable by screen readers
 			</p>
@@ -187,14 +187,14 @@
 				more' and 'click here'
 			</p>
             <p>
-				use accesskeys to make navigation more efficient for keyboard only users - also works on buttons and form controls
+				use <code></code>accesskeys to make navigation more efficient for keyboard only users - also works on buttons and form controls
 			</p>
 			<p>click here for <a accesskey="h" href="https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki">information about hollow knight</a></p></p>
 			<h2>tabindex attribute</h2>
             <p>links and form controls automatically recieve keyboard focus</p>
-			<p>tabindex="0" adds keyboard focus when a user tabs through page to elements such as div, span and p</p>
-			<p>tabindex="-1" indicates that it is focusable but not reachable by keyboard</p>
-            <p>tabindex="1" or higher ("2", "3"...) sets the tab order of the elements - note this can override the default order so use carefully</p>
+			<p><code></code>tabindex="0" adds keyboard focus when a user tabs through page to elements such as div, span and p</p>
+			<p><code></code>tabindex="-1" indicates that it is focusable but not reachable by keyboard</p>
+            <p><code></code>tabindex="1" or higher ("2", "3"...) sets the tab order of the elements - note this can override the default order so use carefully</p>
 		</main>
 		<script src="index.js"></script>
 	</body>
